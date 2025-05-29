@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Университетская столовая</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Университетская Столовая</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#order">Сделать заказ</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Добро пожаловать в Университетскую столовую!</h2>
+      <p>Быстрое и вкусное питание в университете</p>
+      <a href="#order" class="btn">Сделать заказ</a>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Меню</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Борщ</h3>
+          <p>Сытный суп с мясом и овощами</p>
+          <span>350₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Плов</h3>
+          <p>Традиционное блюдо с мясом и рисом</p>
+          <span>500₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Чай</h3>
+          <p>Чёрный или зелёный</p>
+          <span>100₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Пицца "Студенческая"</h3>
+          <p>Сыр, колбаса, грибы</p>
+          <span>800₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Куриный суп</h3>
+          <p>Лёгкий суп с курицей и лапшой</p>
+          <span>300₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Салат "Оливье"</h3>
+          <p>Классический салат с колбасой и овощами</p>
+          <span>250₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Компот</h3>
+          <p>Домашний напиток из сухофруктов</p>
+          <span>150₸</span>
+        </div>
+        <div class="menu-item">
+          <h3>Пирожное</h3>
+          <p>Шоколадное пирожное с кремом</p>
+          <span>200₸</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="container">
+      <h2>Сделать заказ</h2>
+      <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+
+        <label for="item">Блюдо:</label>
+        <select id="item" required>
+          <option value="Борщ">Борщ</option>
+          <option value="Плов">Плов</option>
+          <option value="Чай">Чай</option>
+          <option value="Пицца">Пицца "Студенческая"</option>
+          <option value="Куриный суп">Куриный суп</option>
+          <option value="Салат Оливье">Салат "Оливье"</option>
+          <option value="Компот">Компот</option>
+          <option value="Пирожное">Пирожное</option>
+        </select>
+
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" value="1" required>
+
+        <label for="pickup">Время получения:</label>
+        <input type="time" id="pickup" required>
+
+        <button type="submit" class="btn">Отправить заказ</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>г. Актобе, 10</p>
+      <p>Телефон: +7 777 123 4567</p>
+      <p>Email: info@unicafe.kz</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Университетская Столовая. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
